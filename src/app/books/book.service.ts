@@ -11,6 +11,7 @@ export class BookService {
 
   addBook(book: Book): Observable<Book>{
     // of creates an observable of the relevant type
+    
     return of(book)
   }
 }
