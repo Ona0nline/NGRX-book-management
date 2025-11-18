@@ -8,8 +8,7 @@ import { Book } from "../models/book";
 // Initial action but it could face issues. We add two more for thesuccess and possible failur
 export const AddBook = createAction('[Book] Add Book', props<Book>());
 export const AddBookSuccess = createAction('[Book] Added Book Successfully', props<Book>());
-export const AddBookFailure = createAction('[Book] Failed to Add book', props<{error:any}>);
-
+export const AddBookFailure = createAction('[Book] Failed to Add book', props<{error:any}>());
 
 
 export const RemoveBook = createAction('[Book] Remove Book', props<{bookId: string}>());
